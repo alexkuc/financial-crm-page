@@ -20,6 +20,7 @@ devOptions = {
 
 mix
   .options(devOptions)
+  .sourceMaps()
   .js('resources/js/entry.jsx', 'public/js')
   .react()
   .sass('resources/sass/app.scss', 'public/css');
