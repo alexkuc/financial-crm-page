@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root" data-url="{{ asset('data.json') }}"></div>
 </body>
 
 </html>

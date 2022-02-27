@@ -14,7 +14,7 @@ const rootEl = document.getElementById('root');
 if (rootEl)
   ReactDOM.render(
     <BrowserRouter>
-      <App />
+      <App jsonUrl={rootEl.dataset.url ?? null} />
     </BrowserRouter>,
     rootEl
   );
