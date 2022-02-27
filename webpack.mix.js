@@ -17,6 +17,6 @@ mix.options({
         port: 3000,
     },
 })
-    .js("resources/js/app.js", "public/js")
+    .js("resources/js/entry.jsx", "public/js")
     .react()
     .sass('resources/sass/app.scss', 'public/css');
