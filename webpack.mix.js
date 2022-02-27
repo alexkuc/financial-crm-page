@@ -11,12 +11,13 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.options({
+mix
+  .options({
     hmrOptions: {
-        host: "crm.test",
-        port: 3000,
+      host: 'crm.test',
+      port: 3000,
     },
-})
-    .js("resources/js/entry.jsx", "public/js")
-    .react()
-    .sass('resources/sass/app.scss', 'public/css');
+  })
+  .js('resources/js/entry.jsx', 'public/js')
+  .react()
+  .sass('resources/sass/app.scss', 'public/css');
