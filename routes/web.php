@@ -13,4 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::fallback(fn () => view('entry'));
+Route::get('/', fn () => view('entry'));
+
+$pages = [
+  'personal-details',
+  'notes',
+  'activity',
+  'trading-accounts',
+  'documents'
+];
+
+Route::get('/{page}', fn () => view('entry'))->where('page', implode('|', $pages));
