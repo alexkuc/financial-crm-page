@@ -1,8 +1,10 @@
+import Navigation from './Navigation';
+
 const Layout = () => {
   return (
-    <div class="layout">
+    <div className="layout">
       <header></header>
-      <nav>TODO: nav</nav>
+      <Navigation />
       <main>TODO: main</main>
       <footer></footer>
     </div>
