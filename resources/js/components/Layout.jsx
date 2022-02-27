@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import Navigation from './Navigation';
 
 const Layout = () => {
@@ -5,7 +6,7 @@ const Layout = () => {
     <div className="layout">
       <header></header>
       <Navigation />
-      <main>TODO: main</main>
+      <Outlet />
       <footer></footer>
     </div>
   );
