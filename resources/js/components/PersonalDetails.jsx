@@ -1,22 +1,33 @@
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+} from '@chakra-ui/react';
+
 const PersonalDetails = ({ details }) => {
   return (
     <section>
-      <table>
-        <thead>
-          <tr>
+      <Table>
+        <Thead>
+          <Tr>
             {Object.keys(details).map((key) => (
-              <th key={key}>{key}</th>
+              <Td key={key}>{key}</Td>
             ))}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
             {Object.keys(details).map((key) => (
-              <td key={details[key]}>{details[key]}</td>
+              <Td key={details[key]}>{details[key]}</Td>
             ))}
-          </tr>
-        </tbody>
-      </table>
+          </Tr>
+        </Tbody>
+      </Table>
     </section>
   );
 };
